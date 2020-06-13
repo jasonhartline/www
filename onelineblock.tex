@@ -1,0 +1,84 @@
+\documentclass[usenames,dvipsnames]{beamer}
+
+\mode<presentation> {
+\usetheme{Madrid}
+\usecolortheme{rose}
+}
+
+
+\beamertemplatenavigationsymbolsempty
+
+\usepackage{environ}
+\usepackage{graphicx} 
+\usepackage{tikz}
+
+\newlength{\originaltextwidth}
+\newcommand{\onelineblock}[2]{%
+\setlength{\originaltextwidth}{\textwidth}
+  \vspace*{.8ex}\hspace*{-2.3ex}%
+  \rotatebox{90}{\reflectbox{%
+    \begin{minipage}{2ex}
+      \begin{block}{\rotatebox{90}{\reflectbox{\makebox[.08\originaltextwidth][l]{\vphantom{$($}\,#1}}}}\rotatebox{90}{\reflectbox{\makebox[.90\originaltextwidth][l]{\vphantom{$($}{#2}}}}\end{block}\end{minipage}}}
+}
+
+
+
+\title{One-line Blocks in Beamer}
+
+
+\author{Jason Hartline}
+
+\institute{Northwestern U.}
+
+
+
+\date{June 12, 2020}
+
+
+\begin{document}
+
+
+
+\begin{frame}[fragile]{One-line Block}
+
+
+\begin{block}{Preamble}
+{\tiny  
+\begin{verbatim}
+\usepackage{environ}
+\usepackage{graphicx} 
+\usepackage{tikz}
+
+\newlength{\originaltextwidth}
+\newcommand{\onelineblock}[2]{%
+\setlength{\originaltextwidth}{\textwidth}
+  \vspace*{.8ex}\hspace*{-2.3ex}%
+  \rotatebox{90}{\reflectbox{%
+    \begin{minipage}{2ex}
+      \begin{block}{\rotatebox{90}{\reflectbox{\makebox[.08\originaltextwidth][l]{\vphantom{$($}\,#1}}}}
+      \rotatebox{90}{\reflectbox{\makebox[.90\originaltextwidth][l]{\vphantom{$($}{#2}}}}
+      \end{block}
+    \end{minipage}}
+  }
+}
+\end{verbatim}
+}
+\end{block}
+
+\vspace{-1ex}
+
+\begin{block}{Document}
+{\tiny
+\begin{verbatim}
+\onelineblock{Fact:}{This is actually a narrow Beamer block, rotated and flipped.}
+\end{verbatim}
+}
+\end{block}
+
+
+
+\onelineblock{Fact:}{This is actually a narrow Beamer block, rotated and flipped.}
+
+\end{frame}
+
+\end{document}
