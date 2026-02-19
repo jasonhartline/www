@@ -1,3 +1,3 @@
 ---
-redirect_to: MDnA/
+redirect_to: /MDnA/
 ---
