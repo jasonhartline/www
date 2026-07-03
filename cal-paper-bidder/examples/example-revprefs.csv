@@ -1,0 +1,882 @@
+paper,title,preference,abstract,topics
+1,Revenue Non-monotonicity in Matching Markets,0,"The Vickrey-Clarke-Groves (VCG) mechanism is infamously revenue non-monotone in combinatorial
+auctions. I.e., when a buyer increases their value for a bundle of items, the total auction
+revenue may decrease. Combinatorial auctions exhibit complementarities which broadly result in
+complexities in auction theory. This brief note shows that non-monotonicity in multi-item
+auctions is not a result of complementarities, and in fact, VCG is revenue non-monotone even in
+matching markets.",Theoretical economics
+2,ComplLLM: Fine-tuning LLMs to Discover Complementary Signals for Decision-making,0,"Multi-agent decision pipelines can outperform single agent workflows when complementarity holds,
+i.e., different agents bring unique information to the table to inform a final decision. We
+propose ComplLLM, a post-training framework based on decision theory that fine-tunes a
+decision-assistant LLM using complementary information as reward to output signals that
+complement existing agent decisions. We validate ComplLLM on synthetic and real-world tasks
+involving domain experts, demonstrating how the approach recovers known complementary
+information and produces plausible explanations of complementary signals to support downstream
+decision-makers.",Artificial intelligence; Human-computer interaction
+3,Clarification of `Algorithmic Collusion without Threats',0,"This brief note clarifies that the scenario described in Arunachaleswaran et al. (2025) --
+titled `Algorithmic Collusion without Threats' -- is not one of collusion, but one where one
+player is behaving non-competitively and the other is behaving competitively.",Theoretical economics
+4,The Economics of No-regret Learning Algorithms,0,"A fundamental challenge for modern economics is to understand what happens when actors in an
+economy are replaced with algorithms. Like rationality has enabled understanding of outcomes of
+classical economic actors, no-regret can enable the understanding of outcomes of algorithmic
+actors. This review article covers the classical computer science literature on no-regret
+algorithms to provide a foundation for an overview of the latest economics research on no-regret
+algorithms, focusing on the emerging topics of manipulation, statistical inference, and
+algorithmic collusion.",Theoretical economics
+5,Scale-robust Auctions,0,"We study auctions that are robust at any scale, i.e., they can be applied to sell both expensive
+and cheap items and achieve the best multiplicative approximations of the optimal revenue in the
+worst case. We show that the optimal mechanism is scale invariant, which randomizes between
+selling at the second-price and a 2.45 multiple of the second-price.",Theoretical economics
+6,Truthful Calibration Errors for Multi-Class Prediction,0,"Calibrated predictions are useful because their numerical values can be interpreted as
+probabilities. Calibration errors are therefore widely used to evaluate, compare, and tune
+probabilistic predictors. Recently, Haghtalab et al. (2024) introduced an additional requirement
+for such measures: truthfulness. A calibration measure is truthful if a predictor minimizes its
+expected measured error by reporting the true conditional label distribution. Many standard
+empirical calibration errors are non-truthful: a predictor may appear better calibrated by
+distorting its probabilities rather than reporting them truthfully. We study the practical role
+of truthfulness for calibration measurement in multiclass prediction. First, we introduce
+perfectly truthful calibration errors for multidimensional linear properties of the label
+distribution, generalizing the truthful calibration error for binary predictions in Hartline et
+al. (2025). This framework includes full multiclass calibration and classwise calibration. We
+also identify a truthful correction for confidence calibration. Second, we characterize the
+decision-theoretic implications of these truthful errors. For calibrated predictors, truthful
+calibration errors preserve the Blackwell dominance: a more informative calibrated predictor
+receives no larger expected error. Third, we show that this decision-theoretic interpretation
+explains and mitigates the well-observed ranking robustness problem of binned calibration
+errors. Empirically, non-truthful confidence-based errors can reverse model rankings when the
+number of bins changes, while our truthful errors give more stable rankings across binning
+choices.",Machine learning; Data structures and algorithms; Statistical machine learning
+7,A Perfectly Truthful Calibration Measure,0,"Calibration requires that predictions are conditionally unbiased and, therefore, reliably
+interpretable as probabilities. A calibration measure quantifies how far a predictor is from
+perfect calibration. As introduced by Haghtalab et al. (2024), a calibration measure is truthful
+if it is minimized in expectation when a predictor outputs the ground-truth probabilities.
+Predicting the true probabilities guarantees perfect calibration, but in reality, when
+calibration is evaluated on a random sample, all known calibration measures incentivize
+predictors to lie in order to appear more calibrated. Such lack of truthfulness motivated
+Haghtalab et al. (2024) and Qiao and Zhao (2025) to construct approximately truthful calibration
+measures in the sequential prediction setting, but no perfectly truthful calibration measure was
+known to exist even in the more basic batch setting. We design a simple, perfectly and strictly
+truthful, sound and complete calibration measure in the batch setting: averaged two-bin
+calibration error (ATB). ATB is quadratically related to two existing calibration measures: the
+smooth calibration error smCal and the lower distance to calibration distCal. The simplicity in
+our definition of ATB makes it efficient and straightforward to compute, allowing us to give the
+first linear-time calibration testing algorithm, improving a result of Hu et al. (2024). We also
+introduce a general recipe for constructing truthful measures based on the variance additivity
+of independent random variables, which proves the truthfulness of ATB as a special case and
+allows us to construct other truthful calibration measures such as quantile-binned l_2-ECE.",Machine learning; Data structures and algorithms; Statistical machine learning
+8,A Geometric Analysis of Gains from Trade,0,"We provide a geometric proof that the random proposer mechanism is a $4$-approximation to the
+first-best gains from trade in bilateral exchange. We then refine this geometric analysis to
+recover the state-of-the-art approximation ratio of $3.15$.",Theoretical economics
+9,Behavioral Study of Dashboard Mechanisms,0,"Visualization dashboards are increasingly used in strategic settings like auctions to enhance
+decision-making and reduce strategic confusion. This paper presents behavioral experiments
+evaluating how different dashboard designs affect bid optimization in reverse first-price
+auctions. Additionally, we assess how dashboard designs impact the auction designer's ability to
+accurately infer bidders' preferences within the dashboard mechanism framework. We compare
+visualizations of the bid allocation rule, commonly deployed in practice, to alternatives that
+display expected utility. We find that utility-based visualizations significantly improve
+bidding by reducing cognitive demands on bidders. However, even with improved dashboards,
+bidders systematically under-shade their bids, driven by an implicit preference for certain wins
+in uncertain settings. As a result, dashboard-based mechanisms that assume fully rational or
+risk-neutral bidder responses to dashboards can produce significant estimation errors when
+inferring private preferences, which may lead to suboptimal allocations in practice. Explicitly
+modeling agents' behavioral responses to dashboards substantially improves inference accuracy,
+highlighting the need to align visualization design and econometric inference assumptions in
+practice.",
+10,Aligned Textual Scoring Rules,0,"Scoring rules elicit probabilistic predictions from a strategic agent by scoring the prediction
+against a ground truth state. A scoring rule is proper if, from the agent's perspective,
+reporting the true belief maximizes the expected score. With the development of language models,
+Wu and Hartline (2024) proposes a reduction from textual information elicitation to the
+numerical (i.e. probabilistic) information elicitation problem, which achieves provable
+properness for textual elicitation. However, not all proper scoring rules are well aligned with
+human preference over text. Our paper designs the Aligned Scoring rule (ASR) for text by
+optimizing and minimizing the mean squared error between a proper scoring rule and a reference
+score (e.g. human score). Our experiments show that our ASR outperforms previous methods in
+aligning with human preference while maintaining properness.",Artificial intelligence
+11,Smooth Calibration and Decision Making,0,"Calibration requires predictor outputs to be consistent with their Bayesian posteriors. For
+machine learning predictors that do not distinguish between small perturbations, calibration
+errors are continuous in predictions, e.g., smooth calibration error (Foster and Hart, 2018),
+Distance to Calibration (Blasiok et al., 2023a). On the contrary, decision-makers who use
+predictions make optimal decisions discontinuously in probabilistic space, experiencing loss
+from miscalibration discontinuously. Calibration errors for decision-making are thus
+discontinuous, e.g., Expected Calibration Error (Foster and Vohra, 1997), and Calibration
+Decision Loss (Hu and Wu, 2024). Thus, predictors with a low calibration error for machine
+learning may suffer a high calibration error for decision-making, i.e., they may not be
+trustworthy for decision-makers optimizing assuming their predictions are correct. It is natural
+to ask if post-processing a predictor with a low calibration error for machine learning is
+without loss to achieve a low calibration error for decision-making. In our paper, we show that
+post-processing an online predictor with $ε$ distance to calibration achieves $O(\sqrtε)$ ECE
+and CDL, which is asymptotically optimal. The post-processing algorithm adds noise to make
+predictions differentially private. The optimal bound from low distance to calibration
+predictors from post-processing is non-optimal compared with existing online calibration
+algorithms that directly optimize for ECE and CDL.",Machine learning; Data structures and algorithms; Statistical machine learning
+12,Explaining and Improving Information Complementarities in Multi-Agent Decision-making,0,"Multiple agents are increasingly combined to make decisions with the expectation of achieving
+complementary performance, where the decisions they make together outperform those made
+individually. However, knowing how to improve the performance of collaborating agents requires
+knowing what information and strategies each agent employs. With a focus on human-AI pairings,
+we contribute a decision-theoretic framework for characterizing the value of information. By
+defining complementary information, our approach identifies opportunities for agents to better
+exploit available information in AI-assisted decision workflows. We present a novel explanation
+technique (ILIV-SHAP) that adapts SHAP explanations to highlight human-complementing
+information. We validate the effectiveness of our framework and ILIV-SHAP through a study of
+human-AI decision-making, and demonstrate the framework on examples from chest X-ray diagnosis
+and deepfake detection. We find that presenting ILIV-SHAP with AI predictions leads to reliably
+greater reductions in error over non-AI assisted decisions more than vanilla SHAP.",Artificial intelligence; Machine learning
+13,"Regulation of Algorithmic Collusion, Refined: Testing Pessimistic Calibrated Regret",0,"We study the regulation of algorithmic (non-)collusion amongst sellers in dynamic imperfect
+price competition by auditing their data as introduced by Hartline et al. [2024]. We develop an
+auditing method that tests whether a seller's pessimistic calibrated regret is low. The
+pessimistic calibrated regret is the highest calibrated regret of outcomes compatible with the
+observed data. This method relaxes the previous requirement that a pricing algorithm must use
+fully-supported price distributions to be auditable. This method is at least as permissive as
+any auditing method that has a high probability of failing algorithmic outcomes with
+non-vanishing calibrated regret. Additionally, we strengthen the justification for using
+vanishing calibrated regret, versus vanishing best-in-hindsight regret, as the non-collusion
+definition, by showing that even without any side information, the pricing algorithms that only
+satisfy weaker vanishing best-in-hindsight regret allow an opponent to manipulate them into
+posting supra-competitive prices. This manipulation cannot be excluded with a non-collusion
+definition of vanishing best-in-hindsight regret. We motivate and interpret the approach of
+auditing algorithms from their data as suggesting a per se rule. However, we demonstrate that it
+is possible for algorithms to pass the audit by pretending to have higher costs than they
+actually do. For such scenarios, the rule of reason can be applied to bound the range of costs
+to those that are reasonable for the domain.",Theoretical economics
+14,Unexploited Information Value in Human-AI Collaboration,0,"Humans and AIs are often paired on decision tasks with the expectation of achieving
+complementary performance -- where the combination of human and AI outperforms either one alone.
+However, how to improve performance of a human-AI team is often not clear without knowing more
+about what particular information and strategies each agent employs. In this paper, we propose a
+model based in statistical decision theory to analyze human-AI collaboration from the
+perspective of what information could be used to improve a human or AI decision. We demonstrate
+our model on a deepfake detection task to investigate seven video-level features by their
+unexploited value of information. We compare the human alone, AI alone and human-AI team and
+offer insights on how the AI assistance impacts people's usage of the information and what
+information that the AI exploits well might be useful for improving human decisions.",Human-computer interaction; Artificial intelligence
+15,ElicitationGPT: Text Elicitation Mechanisms via Language Models,0,"Scoring rules evaluate probabilistic forecasts of an unknown state against the realized state
+and are a fundamental building block in the incentivized elicitation of information. This paper
+develops mechanisms for scoring elicited text against ground truth text by reducing the textual
+information elicitation problem to a forecast elicitation problem, via domain-knowledge-free
+queries to a large language model (specifically ChatGPT), and empirically evaluates their
+alignment with human preferences. Our theoretical analysis shows that the reduction achieves
+provable properness via black-box language models. The empirical evaluation is conducted on peer
+reviews from a peer-grading dataset, in comparison to manual instructor scores for the peer
+reviews. Our results suggest a paradigm of algorithmic artificial intelligence that may be
+useful for developing artificial intelligence technologies with provable guarantees.",Artificial intelligence; Machine learning
+16,Subgame Optimal and Prior-Independent Online Algorithms,0,"This paper takes a game theoretic approach to the design and analysis of online algorithms and
+illustrates the approach on the finite-horizon ski-rental problem. This approach allows beyond
+worst-case analysis of online algorithms. First, we define ""subgame optimality"" which is
+stronger than worst case optimality in that it requires the algorithm to take advantage of an
+adversary not playing a worst case input. Algorithms only focusing on the worst case can be far
+from subgame optimal. Second, we consider prior-independent design and analysis of online
+algorithms, where rather than choosing a worst case input, the adversary chooses a worst case
+independent and identical distribution over inputs. Prior-independent online algorithms are
+generally analytically intractable; instead we give a fully polynomial time approximation scheme
+to compute them. Highlighting the potential improvement from these paradigms for the
+finite-horizon ski-rental problem, we empirically compare worst-case, subgame optimal, and
+prior-independent algorithms in the prior-independent framework.",
+17,Fundamental Limits of Throughput and Availability: Applications to prophet inequalities & transaction fee mechanism design,0,"This paper studies the fundamental limits of availability and throughput for independent and
+heterogeneous demands of a limited resource. Availability is the probability that the demands
+are below the capacity of the resource. Throughput is the expected fraction of the resource that
+is utilized by the demands. We offer a concentration inequality generator that gives lower
+bounds on feasible availability and throughput pairs with a given capacity and independent but
+not necessarily identical distributions of up-to-unit demands. We show that availability and
+throughput cannot both be poor. These bounds are analogous to tail inequalities on sums of
+independent random variables, but hold throughout the support of the demand distribution. This
+analysis gives analytically tractable bounds supporting the unit-demand characterization of
+Chawla, Devanur, and Lykouris (2023) and generalizes to up-to-unit demands. Our bounds also
+provide an approach towards improved multi-unit prophet inequalities (Hajiaghayi, Kleinberg, and
+Sandholm, 2007). They have applications to transaction fee mechanism design (for blockchains)
+where high availability limits the probability of profitable user-miner coalitions (Chung and
+Shi, 2023).",
+18,Error-Tolerant E-Discovery Protocols,0,"We consider the multi-party classification problem introduced by Dong, Hartline, and
+Vijayaraghavan (2022) in the context of electronic discovery (e-discovery). Based on a request
+for production from the requesting party, the responding party is required to provide documents
+that are responsive to the request except for those that are legally privileged. Our goal is to
+find a protocol that verifies that the responding party sends almost all responsive documents
+while minimizing the disclosure of non-responsive documents. We provide protocols in the
+challenging non-realizable setting, where the instance may not be perfectly separated by a
+linear classifier. We demonstrate empirically that our protocol successfully manages to find
+almost all relevant documents, while incurring only a small disclosure of non-responsive
+documents. We complement this with a theoretical analysis of our protocol in the
+single-dimensional setting, and other experiments on simulated data which suggest that the
+non-responsive disclosure incurred by our protocol may be unavoidable.",Computers and society; Data structures and algorithms
+19,Algorithmic Robust Forecast Aggregation,0,"Forecast aggregation combines the predictions of multiple forecasters to improve accuracy.
+However, the lack of knowledge about forecasters' information structure hinders optimal
+aggregation. Given a family of information structures, robust forecast aggregation aims to find
+the aggregator with minimal worst-case regret compared to the omniscient aggregator. Previous
+approaches for robust forecast aggregation rely on heuristic observations and parameter tuning.
+We propose an algorithmic framework for robust forecast aggregation. Our framework provides
+efficient approximation schemes for general information aggregation with a finite family of
+possible information structures. In the setting considered by Arieli et al. (2018) where two
+agents receive independent signals conditioned on a binary state, our framework also provides
+efficient approximation schemes by imposing Lipschitz conditions on the aggregator or discrete
+conditions on agents' reports. Numerical experiments demonstrate the effectiveness of our method
+by providing a nearly optimal aggregator in the setting considered by Arieli et al. (2018).",Machine learning
+20,Regulation of Algorithmic Collusion,0,"Consider sellers in a competitive market that use algorithms to adapt their prices from data
+that they collect. In such a context it is plausible that algorithms could arrive at prices that
+are higher than the competitive prices and this may benefit sellers at the expense of consumers
+(i.e., the buyers in the market). This paper gives a definition of plausible algorithmic
+non-collusion for pricing algorithms. The definition allows a regulator to empirically audit
+algorithms by applying a statistical test to the data that they collect. Algorithms that are
+good, i.e., approximately optimize prices to market conditions, can be augmented to contain the
+data sufficient to pass the audit. Algorithms that have colluded on, e.g., supra-competitive
+prices cannot pass the audit. The definition allows sellers to possess useful side information
+that may be correlated with supply and demand and could affect the prices used by good
+algorithms. The paper provides an analysis of the statistical complexity of such an audit, i.e.,
+how much data is sufficient for the test of non-collusion to be accurate.",Theoretical economics
+21,A Decision Theoretic Framework for Measuring AI Reliance,0,"Humans frequently make decisions with the aid of artificially intelligent (AI) systems. A common
+pattern is for the AI to recommend an action to the human who retains control over the final
+decision. Researchers have identified ensuring that a human has appropriate reliance on an AI as
+a critical component of achieving complementary performance. We argue that the current
+definition of appropriate reliance used in such research lacks formal statistical grounding and
+can lead to contradictions. We propose a formal definition of reliance, based on statistical
+decision theory, which separates the concepts of reliance as the probability the decision-maker
+follows the AI's recommendation from challenges a human may face in differentiating the signals
+and forming accurate beliefs about the situation. Our definition gives rise to a framework that
+can be used to guide the design and interpretation of studies on human-AI complementarity and
+reliance. Using recent AI-advised decision making studies from literature, we demonstrate how
+our framework can be used to separate the loss due to mis-reliance from the loss due to not
+accurately differentiating the signals. We evaluate these losses by comparing to a baseline and
+a benchmark for complementary performance defined by the expected payoff achieved by a rational
+decision-maker facing the same decision task as the behavioral decision-makers.",Artificial intelligence; Human-computer interaction
+22,Underspecified Human Decision Experiments Considered Harmful,0,"Decision-making with information displays is a key focus of research in areas like human-AI
+collaboration and data visualization. However, what constitutes a decision problem, and what is
+required for an experiment to conclude that decisions are flawed, remain imprecise. We present a
+widely applicable definition of a decision problem synthesized from statistical decision theory
+and information economics. We claim that to attribute loss in human performance to bias, an
+experiment must provide the information that a rational agent would need to identify the
+normative decision. We evaluate whether recent empirical research on AI-assisted decisions
+achieves this standard. We find that only 10 (26%) of 39 studies that claim to identify biased
+behavior presented participants with sufficient information to make this claim in at least one
+treatment condition. We motivate the value of studying well-defined decision problems by
+describing a characterization of performance losses they allow to be conceived.",Human-computer interaction; Artificial intelligence
+23,Extension of Minimax for Algorithmic Lower Bounds,0,"This paper considers the use of Yao's Minimax Theorem in robust algorithm design, e.g., for
+online algorithms, where the algorithm designer aims to minimize the ratio of the algorithm's
+performance to the optimal performance. When applying Minimax, the objective becomes the
+expectation of these ratios. The main result of the paper is that it is equally valid for the
+objective (after applying Minimax) to be the ratio of the expectations.",Data structures and algorithms
+24,Designing Shared Information Displays for Agents of Varying Strategic Sophistication,0,"Data-driven predictions are often perceived as inaccurate in hindsight due to behavioral
+responses. In this study, we explore the role of interface design choices in shaping
+individuals' decision-making processes in response to predictions presented on a shared
+information display in a strategic setting. We introduce a novel staged experimental design to
+investigate the effects of design features, such as visualizations of prediction uncertainty and
+error, within a repeated congestion game. In this game, participants assume the role of taxi
+drivers and use a shared information display to decide where to search for their next ride. Our
+experimental design endows agents with varying level-$k$ depths of thinking, allowing some
+agents to possess greater sophistication in anticipating the decisions of others using the same
+information display. Through several extensive experiments, we identify trade-offs between
+displays that optimize individual decisions and those that best serve the collective social
+welfare of the system. We find that the influence of display characteristics varies based on an
+agent's strategic sophistication. We observe that design choices promoting individual-level
+decision-making can lead to suboptimal system outcomes, as manifested by a lower realization of
+potential social welfare. However, this decline in social welfare is offset by a reduction in
+the distribution shift, narrowing the gap between predicted and realized system outcomes, which
+potentially enhances the perceived reliability and trustworthiness of the information display
+post hoc. Our findings pave the way for new research questions concerning the design of
+effective prediction interfaces in strategic environments.",Human-computer interaction
+25,Robust Analysis of Auction Equilibria,0,"Equilibria in auctions can be very difficult to analyze, beyond the symmetric environments where
+revenue equivalence renders the analysis straightforward. This paper takes a robust approach to
+evaluating the equilibria of auctions. Rather than identify the equilibria of an auction under
+specific environmental conditions, it considers worst-case analysis, where an auction is
+evaluated according to the worst environment and worst equilibrium in that environment. It
+identifies a non-equilibrium property of auctions that governs whether or not their worst-case
+equilibria are good for welfare and revenue. This property is easy to analyze, can be refined
+from data, and composes across markets where multiple auctions are run simultaneously.",
+26,Screening with Disadvantaged Agents,0,"Motivated by school admissions, this paper studies screening in a population with both
+advantaged and disadvantaged agents. A school is interested in admitting the most skilled
+students, but relies on imperfect test scores that reflect both skill and effort. Students are
+limited by a budget on effort, with disadvantaged students having tighter budgets. This raises a
+challenge for the principal: among agents with similar test scores, it is difficult to
+distinguish between students with high skills and students with large budgets. Our main result
+is an optimal stochastic mechanism that maximizes the gains achieved from admitting
+``high-skill"" students minus the costs incurred from admitting ``low-skill"" students when
+considering two skill types and $n$ budget types. Our mechanism makes it possible to give higher
+probability of admission to a high-skill student than to a low-skill, even when the low-skill
+student can potentially get higher test-score due to a higher budget. Further, we extend our
+admission problem to a setting in which students uniformly receive an exogenous subsidy to
+increase their budget for effort. This extension can only help the school's admission objective
+and we show that the optimal mechanism with exogenous subsidies has the same characterization as
+optimal mechanisms for the original problem.",
+27,Fair Grading Algorithms for Randomized Exams,0,"This paper studies grading algorithms for randomized exams. In a randomized exam, each student
+is asked a small number of random questions from a large question bank. The predominant grading
+rule is simple averaging, i.e., calculating grades by averaging scores on the questions each
+student is asked, which is fair ex-ante, over the randomized questions, but not fair ex-post, on
+the realized questions. The fair grading problem is to estimate the average grade of each
+student on the full question bank. The maximum-likelihood estimator for the Bradley-Terry-Luce
+model on the bipartite student-question graph is shown to be consistent with high probability
+when the number of questions asked to each student is at least the cubed-logarithm of the number
+of students. In an empirical study on exam data and in simulations, our algorithm based on the
+maximum-likelihood estimator significantly outperforms simple averaging in prediction accuracy
+and ex-post fairness even with a small class and exam size.",Statistical machine learning
+28,The Rational Agent Benchmark for Data Visualization,0,"Understanding how helpful a visualization is from experimental results is difficult because the
+observed performance is confounded with aspects of the study design, such as how useful the
+information that is visualized is for the task. We develop a rational agent framework for
+designing and interpreting visualization experiments. Our framework conceives two experiments
+with the same setup: one with behavioral agents (human subjects), and the other one with a
+hypothetical rational agent. A visualization is evaluated by comparing the expected performance
+of behavioral agents to that of a rational agent under different assumptions. Using recent
+visualization decision studies from the literature, we demonstrate how the framework can be used
+to pre-experimentally evaluate the experiment design by bounding the expected improvement in
+performance from having access to visualizations, and post-experimentally to deconfound errors
+of information extraction from errors of optimization, among other analyses.",Human-computer interaction
+29,Combinatorial Pen Testing (or Consumer Surplus of Deferred-Acceptance Auctions),0,"Pen testing is the problem of selecting high-capacity resources when the only way to measure the
+capacity of a resource expends its capacity. We have a set of $n$ pens with unknown amounts of
+ink and our goal is to select a feasible subset of pens maximizing the total ink in them. We are
+allowed to learn about the ink levels by writing with them, but this uses up ink that was
+previously in the pens. We identify optimal and near optimal pen testing algorithms by drawing
+analogues to auction theoretic frameworks of deferred-acceptance auctions and virtual values.
+Our framework allows the conversion of any near optimal deferred-acceptance mechanism into a
+near optimal pen testing algorithm. Moreover, these algorithms guarantee an additional overhead
+of at most $(1+o(1)) \ln n$ in the approximation factor to the omniscient algorithm that has
+access to the ink levels in the pens. We use this framework to give pen testing algorithms for
+various combinatorial constraints like matroid, knapsack, and general downward-closed
+constraints, and also for online environments.",Data structures and algorithms; Theoretical economics
+30,Optimal Scoring Rules for Multi-dimensional Effort,0,"This paper develops a framework for the design of scoring rules to optimally incentivize an
+agent to exert a multi-dimensional effort. This framework is a generalization to strategic
+agents of the classical knapsack problem (cf. Briest, Krysta, and Vöcking, 2005, Singer, 2010)
+and it is foundational to applying algorithmic mechanism design to the classroom. The paper
+identifies two simple families of scoring rules that guarantee constant approximations to the
+optimal scoring rule. The truncated separate scoring rule is the sum of single dimensional
+scoring rules that is truncated to the bounded range of feasible scores. The threshold scoring
+rule gives the maximum score if reports exceed a threshold and zero otherwise. Approximate
+optimality of one or the other of these rules is similar to the bundling or selling separately
+result of Babaioff, Immorlica, Lucier, and Weinberg (2014). Finally, we show that the
+approximate optimality of the best of those two simple scoring rules is robust when the agent's
+choice of effort is made sequentially.",Theoretical economics
+31,Algorithmic Learning Foundations for Common Law,0,"This paper looks at a common law legal system as a learning algorithm, models specific features
+of legal proceedings, and asks whether this system learns efficiently. A particular feature of
+our model is explicitly viewing various aspects of court proceedings as learning algorithms.
+This viewpoint enables directly pointing out that when the costs of going to court are not
+commensurate with the benefits of going to court, there is a failure of learning and inaccurate
+outcomes will persist in cases that settle. Specifically, cases are brought to court at an
+insufficient rate. On the other hand, when individuals can be compelled or incentivized to bring
+their cases to court, the system can learn and inaccuracy vanishes over time.",Computers and society
+32,Classification Protocols with Minimal Disclosure,0,"We consider multi-party protocols for classification that are motivated by applications such as
+e-discovery in court proceedings. We identify a protocol that guarantees that the requesting
+party receives all responsive documents and the sending party discloses the minimal amount of
+non-responsive documents necessary to prove that all responsive documents have been received.
+This protocol can be embedded in a machine learning framework that enables automated labeling of
+points and the resulting multi-party protocol is equivalent to the standard one-party
+classification problem (if the one-party classification problem satisfies a natural
+independence-of-irrelevant-alternatives property). Our formal guarantees focus on the case where
+there is a linear classifier that correctly partitions the documents.",Computers and society; Data structures and algorithms; Machine learning; Statistical machine learning
+33,Non-strategic Econometrics (for Initial Play),0,"Modelling agent preferences has applications in a range of fields including economics and
+increasingly, artificial intelligence. These preferences are not always known and thus may need
+to be estimated from observed behavior, in which case a model is required to map agent
+preferences to behavior, also known as structural estimation. Traditional models are based on
+the assumption that agents are perfectly rational: that is, they perfectly optimize and behave
+in accordance with their own interests. Work in the field of behavioral game theory has shown,
+however, that human agents often make decisions that are imperfectly rational, and the field has
+developed models that relax the perfect rationality assumption. We apply models developed for
+predicting behavior towards estimating preferences and show that they outperform both
+traditional and commonly used benchmark models on data collected from human subjects. In fact,
+Nash equilibrium and its relaxation, quantal response equilibrium (QRE), can induce an
+inaccurate estimate of agent preferences when compared against ground truth. A key finding is
+that modelling non-strategic behavior, conventionally considered uniform noise, is important for
+estimating preferences. To this end, we introduce quantal-linear4, a rich non-strategic model.
+We also propose an augmentation to the popular quantal response equilibrium with a non-strategic
+component. We call this augmented model QRE+L0 and find an improvement in estimating values over
+the standard QRE. QRE+L0 allows for alternative models of non-strategic behavior in addition to
+quantal-linear4.",
+34,Online Bipartite Matching via Smoothness,0,"The online bipartite matching problem has offline buyers desiring to be matched to online items.
+The analysis of online bipartite matching of Eden et al. (2021) is a smoothness proof (Syrgkanis
+and Tardos, 2013). Moreover, it can be interpreted as combining a $λ= 1-1/e$ value covering
+(which holds for single-dimensional agents and randomized auctions) and $μ= 1$ revenue covering
+(Hartline et al., 2014). Note that value covering is a fact about single-dimensional agents and
+has nothing to do with the underlying feasibility setting. Thus, the essential new result from
+Eden et al. (2021) is that online bipartite matching is $μ=1$ revenue covered. A number of old
+and new observations follow from this perspective.",Theoretical economics
+35,Visualization Equilibrium,0,"In many real-world strategic settings, people use information displays to make decisions. In
+these settings, an information provider chooses which information to provide to strategic agents
+and how to present it, and agents formulate a best response based on the information and their
+anticipation of how others will behave. We contribute the results of a controlled online
+experiment to examine how the provision and presentation of information impacts people's
+decisions in a congestion game. Our experiment compares how different visualization approaches
+for displaying this information, including bar charts and hypothetical outcome plots, and
+different information conditions, including where the visualized information is private versus
+public (i.e., available to all agents), affect decision making and welfare. We characterize the
+effects of visualization anticipation, referring to changes to behavior when an agent goes from
+alone having access to a visualization to knowing that others also have access to the
+visualization to guide their decisions. We also empirically identify the visualization
+equilibrium, i.e., the visualization for which the visualized outcome of agents' decisions
+matches the realized decisions of the agents who view it. We reflect on the implications of
+visualization equilibria and visualization anticipation for designing information displays for
+real-world strategic settings.",Human-computer interaction
+36,Lower Bounds for Prior Independent Algorithms,0,"The prior independent framework for algorithm design considers how well an algorithm that does
+not know the distribution of its inputs approximates the expected performance of the optimal
+algorithm for this distribution. This paper gives a method that is agnostic to problem setting
+for proving lower bounds on the prior independent approximation factor of any algorithm. The
+method constructs a correlated distribution over inputs that can be generated both as a
+distribution over i.i.d. good-for-algorithms distributions and as a distribution over i.i.d.
+bad-for-algorithms distributions. Prior independent algorithms are upper-bounded by the optimal
+algorithm for the latter distribution even when the true distribution is the former. Thus, the
+ratio of the expected performances of the Bayesian optimal algorithms for these two
+decompositions is a lower bound on the prior independent approximation ratio. The techniques of
+the paper connect prior independent algorithm design, Yao's Minimax Principle, and information
+design. We apply this framework to give new lower bounds on several canonical prior independent
+mechanism design problems.",Data structures and algorithms
+37,Revelation Gap for Pricing from Samples,0,"This paper considers prior-independent mechanism design, in which a single mechanism is designed
+to achieve approximately optimal performance on every prior distribution from a given class.
+Most results in this literature focus on mechanisms with truthtelling equilibria, a.k.a.,
+truthful mechanisms. Feng and Hartline (2018) introduce the revelation gap to quantify the loss
+of the restriction to truthful mechanisms. We solve a main open question left in Feng and
+Hartline (2018); namely, we identify a non-trivial revelation gap for revenue maximization. Our
+analysis focuses on the canonical problem of selling a single item to a single agent with only
+access to a single sample from the agent's valuation distribution. We identify the sample-bid
+mechanism (a simple non-truthful mechanism) and upper-bound its prior-independent approximation
+ratio by 1.835 (resp. 1.296) for regular (resp. MHR) distributions. We further prove that no
+truthful mechanism can achieve prior-independent approximation ratio better than 1.957 (resp.
+1.543) for regular (resp. MHR) distributions. Thus, a non-trivial revelation gap is shown as the
+sample-bid mechanism outperforms the optimal prior-independent truthful mechanism. On the
+hardness side, we prove that no (possibly non-truthful) mechanism can achieve prior-independent
+approximation ratio better than 1.073 even for uniform distributions.",
+38,Non-quasi-linear Agents in Quasi-linear Mechanisms,0,"Mechanisms with money are commonly designed under the assumption that agents are quasi-linear,
+meaning they have linear disutility for spending money. We study the implications when agents
+with non-linear (specifically, convex) disutility for payments participate in mechanisms
+designed for quasi-linear agents. We first show that any mechanism that is truthful for
+quasi-linear buyers has a simple best response function for buyers with non-linear disutility
+from payments, in which each bidder simply scales down her value for each potential outcome by a
+fixed factor, equal to her target return on investment (ROI). We call such a strategy
+ROI-optimal. We prove the existence of a Nash equilibrium in which agents use ROI-optimal
+strategies for a general class of allocation problems. Motivated by online marketplaces, we then
+focus on simultaneous second-price auctions for additive bidders and show that all ROI-optimal
+equilibria in this setting achieve constant-factor approximations to suitable welfare and
+revenue benchmarks.",
+39,Mechanisms for a No-Regret Agent: Beyond the Common Prior,0,"A rich class of mechanism design problems can be understood as incomplete-information games
+between a principal who commits to a policy and an agent who responds, with payoffs determined
+by an unknown state of the world. Traditionally, these models require strong and
+often-impractical assumptions about beliefs (a common prior over the state). In this paper, we
+dispense with the common prior. Instead, we consider a repeated interaction where both the
+principal and the agent may learn over time from the state history. We reformulate mechanism
+design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks
+without any assumptions on the state-generating process. Our results make use of novel
+behavioral assumptions for the agent -- centered around counterfactual internal regret -- that
+capture the spirit of rationality without relying on beliefs.",Theoretical economics
+40,Optimization of Scoring Rules,0,"We characterize the optimal reward functions (scoring rules) that incentivize an agent to
+acquire information and report it truthfully to the principal. The optimal scoring rules let the
+agent make a simple binary bet in single-dimensional problems, and choose the dimension with the
+most surprising signal to be scored on in symmetric multi-dimensional problems. This scoring
+rule format remains approximately optimal for asymmetric distributions. These results
+demonstrate the importance of linking incentives to obtain high-quality information in
+multi-dimensional problems. In contrast, standard scoring rules like the quadratic scoring rule,
+or averages of single-dimensional scoring rules can be far from optimal.",
+41,Simple Mechanisms for Agents with Non-linear Utilities,0,"We show that economic conclusions derived from Bulow and Roberts (1989) for linear utility
+models approximately extend to non-linear utility models. Specifically, we quantify the extent
+to which agents with non-linear utilities resemble agents with linear utilities, and we show
+that the approximation of mechanisms for agents with linear utilities approximately extend for
+agents with non-linear utilities. We illustrate the framework for the objectives of revenue and
+welfare on non-linear models that include agents with budget constraints, agents with risk
+aversion, and agents with endogenous valuations. We derive bounds on how much these models
+resemble the linear utility model and combine these bounds with well-studied approximation
+results for linear utility models. We conclude that simple mechanisms are approximately optimal
+for these non-linear agent models.",Theoretical economics
+42,Benchmark Design and Prior-independent Optimization,0,"This paper compares two leading approaches for robust optimization in the models of online
+algorithms and mechanism design. Competitive analysis compares the performance of an online
+algorithm to an offline benchmark in worst-case over inputs, and prior-independent mechanism
+design compares the expected performance of a mechanism on an unknown distribution (of inputs,
+i.e., agent values) to the optimal mechanism for the distribution in worst case over
+distributions. For competitive analysis, a critical concern is the choice of benchmark. This
+paper gives a method for selecting a good benchmark. We show that optimal algorithm/mechanism
+for the optimal benchmark are equal to the prior-independent optimal algorithm/mechanism. We
+solve a central open question in prior-independent mechanism design, namely we identify the
+prior-independent revenue-optimal mechanism for selling a single item to two agents with i.i.d.
+and regularly distributed values. Via this solution and the above equivalence of
+prior-independent mechanism design and competitive analysis (a.k.a. prior-free mechanism design)
+we show that the standard method for lower bounds of prior-free mechanisms is not generally
+tight for the benchmark design program.",
+43,Bias-Variance Games,0,"Firms engaged in electronic commerce increasingly rely on predictive analytics via
+machine-learning algorithms to drive a wide array of managerial decisions. The tuning of many
+standard machine learning algorithms can be understood as trading off bias (i.e., accuracy) with
+variance (i.e., precision) in the algorithm's predictions. The goal of this paper is to
+understand how competition between firms affects their strategic choice of such algorithms. To
+this end, we model the interaction of two firms choosing learning algorithms as a game and
+analyze its equilibria. Absent competition, players care only about the magnitude of predictive
+error and not its source. In contrast, our main result is that with competition, players prefer
+to incur error due to variance rather than due to bias, even at the cost of higher total error.
+In addition, we show that competition can have counterintuitive implications -- for example,
+reducing the error incurred by a firm's algorithm can be harmful to that firm -- but we provide
+conditions under which such phenomena do not occur. In addition to our theoretical analysis, we
+also validate our insights by applying our metrics to several publicly available datasets.",
+44,Dashboard Mechanisms for Online Marketplaces,0,"This paper gives a theoretical model for design and analysis of mechanisms for online
+marketplaces where a bidding dashboard enables the bid-optimization of long-lived agents. We
+assume that a good allocation algorithm exists when given the true values of the agents and we
+develop online winner-pays-bid and all-pay mechanisms that implement the same outcome of the
+algorithm with the aid of a bidding dashboard. The bidding dashboards that we develop work in
+conjunction with the mechanism to guarantee that bidding according to the dashboard is
+strategically equivalent (with vanishing utility difference) to bidding truthfully in the
+sequential truthful implementation of the allocation algorithm. Our dashboard mechanism makes
+only a single call to the allocation algorithm in each stage.",
+45,Optimal Auctions vs. Anonymous Pricing: Beyond Linear Utility,0,"The revenue optimal mechanism for selling a single item to agents with independent but
+non-identically distributed values is complex for agents with linear utility (Myerson,1981) and
+has no closed-form characterization for agents with non-linear utility (cf. Alaei et al., 2012).
+Nonetheless, for linear utility agents satisfying a natural regularity property, Alaei et al.
+(2018) showed that simply posting an anonymous price is an e-approximation. We give a
+parameterization of the regularity property that extends to agents with non-linear utility and
+show that the approximation bound of anonymous pricing for regular agents approximately extends
+to agents that satisfy this approximate regularity property. We apply this approximation
+framework to prove that anonymous pricing is a constant approximation to the revenue optimal
+single-item auction for agents with public-budget utility, private-budget utility, and (a
+special case of) risk-averse utility.",
+46,A Truthful Cardinal Mechanism for One-Sided Matching,0,"We revisit the well-studied problem of designing mechanisms for one-sided matching markets,
+where a set of $n$ agents needs to be matched to a set of $n$ heterogeneous items. Each agent
+$i$ has a value $v_{i,j}$ for each item $j$, and these values are private information that the
+agents may misreport if doing so leads to a preferred outcome. Ensuring that the agents have no
+incentive to misreport requires a careful design of the matching mechanism, and mechanisms
+proposed in the literature mitigate this issue by eliciting only the \emph{ordinal} preferences
+of the agents, i.e., their ranking of the items from most to least preferred. However, the
+efficiency guarantees of these mechanisms are based only on weak measures that are oblivious to
+the underlying values. In this paper we achieve stronger performance guarantees by introducing a
+mechanism that truthfully elicits the full \emph{cardinal} preferences of the agents, i.e., all
+of the $v_{i,j}$ values. We evaluate the performance of this mechanism using the much more
+demanding Nash bargaining solution as a benchmark, and we prove that our mechanism significantly
+outperforms all ordinal mechanisms (even non-truthful ones). To prove our approximation bounds,
+we also study the population monotonicity of the Nash bargaining solution in the context of
+matching markets, providing both upper and lower bounds which are of independent interest.",Data structures and algorithms
+47,Inference from Auction Prices,0,"Econometric inference allows an analyst to back out the values of agents in a mechanism from the
+rules of the mechanism and bids of the agents. This paper gives an algorithm to solve the
+problem of inferring the values of agents in a dominant-strategy mechanism from the social
+choice function implemented by the mechanism and the per-unit prices paid by the agents (the
+agent bids are not observed). For single-dimensional agents, this inference problem is a
+multi-dimensional inversion of the payment identity and is feasible only if the payment identity
+is uniquely invertible. The inversion is unique for single-unit proportional weights social
+choice functions (common, for example, in bandwidth allocation); and its inverse can be found
+efficiently. This inversion is not unique for social choice functions that exhibit
+complementarities. Of independent interest, we extend a result of Rosen (1965), that the Nash
+equilbria of ""concave games"" are unique and pure, to an alternative notion of concavity based on
+Gale and Nikaido (1965).",
+48,An End-to-end Argument in Mechanism Design (Prior-independent Auctions for Budgeted Agents),0,"This paper considers prior-independent mechanism design, namely identifying a single mechanism
+that has near optimal performance on every prior distribution. We show that mechanisms with
+truthtelling equilibria, a.k.a., revelation mechanisms, do not always give optimal
+prior-independent mechanisms and we define the revelation gap to quantify the non-optimality of
+revelation mechanisms. This study suggests that it is important to develop a theory for the
+design of non-revelation mechanisms. Our analysis focuses on welfare maximization in single-item
+auctions for agents with budgets and a natural regularity assumption on their distribution of
+values. The all-pay auction (a non-revelation mechanism) is the Bayesian optimal mechanism; as
+it is prior-independent it is also the prior-independent optimal mechanism (a 1-approximation).
+We prove a lower bound on the prior-independent approximation of revelation mechanisms of 1.013
+and that the clinching auction (a revelation mechanism) is a prior-independent $e \approx 2.714$
+approximation. Thus the revelation gap for single-item welfare maximization with public budget
+agents is in $[1.013, e]$. Some of our analyses extend to the revenue objective, position
+environments, and irregular distributions.",
+49,Mechanism Redesign,0,"This paper develops the theory of mechanism redesign by which an auctioneer can reoptimize an
+auction based on bid data collected from previous iterations of the auction on bidders from the
+same market. We give a direct method for estimation of the revenue of a counterfactual auction
+from the bids in the current auction. The estimator is a simple weighted order statistic of the
+bids and has the optimal error rate. Two applications of our estimator are A/B testing (a.k.a.,
+randomized controlled trials) and instrumented optimization (i.e., revenue optimization subject
+to being able to do accurate inference of any counterfactual auction revenue).",
+50,Bernoulli Factories and Black-Box Reductions in Mechanism Design,0,"We provide a polynomial time reduction from Bayesian incentive compatible mechanism design to
+Bayesian algorithm design for welfare maximization problems. Unlike prior results, our reduction
+achieves exact incentive compatibility for problems with multi-dimensional and continuous type
+spaces. The key technical barrier preventing exact incentive compatibility in prior black-box
+reductions is that repairing violations of incentive constraints requires understanding the
+distribution of the mechanism's output, which is typically #P-hard to compute. Reductions that
+instead estimate the output distribution by sampling inevitably suffer from sampling error,
+which typically precludes exact incentive compatibility. We overcome this barrier by employing
+and generalizing the computational model in the literature on $\textit{Bernoulli factories}$. In
+a Bernoulli factory problem, one is given a function mapping the bias of an ""input coin"" to that
+of an ""output coin"", and the challenge is to efficiently simulate the output coin given only
+sample access to the input coin. This is the key ingredient in designing an incentive compatible
+mechanism for bipartite matching, which can be used to make the approximately incentive
+compatible reduction of Hartline et al. (2015) exactly incentive compatible.",Data structures and algorithms
+51,Fast Core Pricing for Rich Advertising Auctions,0,"Standard ad auction formats do not immediately extend to settings where multiple size
+configurations and layouts are available to advertisers. In these settings, the sale of web
+advertising space increasingly resembles a combinatorial auction with complementarities, where
+truthful auctions such as the Vickrey-Clarke-Groves (VCG) can yield unacceptably low revenue. We
+therefore study core selecting auctions, which boost revenue by setting payments so that no
+group of agents, including the auctioneer, can jointly improve their utilities by switching to a
+different outcome. Our main result is a combinatorial algorithm that finds an approximate bidder
+optimal core point with almost linear number of calls to the welfare maximization oracle. Our
+algorithm is faster than previously-proposed heuristics in the literature and has theoretical
+guarantees. We conclude that core pricing is implementable even for very time sensitive
+practical use cases such as realtime auctions for online advertising and can yield more revenue.
+We justify this claim experimentally using the Microsoft Bing Ad Auction data, through which we
+show our core pricing algorithm generates almost 26% more revenue than VCG on average, about 9%
+more revenue than other core pricing rules known in the literature, and almost matches the
+revenue of the standard Generalized Second Price (GSP) auction.",Data structures and algorithms
+52,Sample Complexity for Non-Truthful Mechanisms,0,"This paper considers the design of non-truthful mechanisms from samples. We identify a
+parameterized family of mechanisms with strategically simple winner-pays-bid, all-pay, and
+truthful payment formats. In general (not necessarily downward-closed) single-parameter
+feasibility environments we prove that the family has low representation and generalization
+error. Specifically, polynomially many bid samples suffice to identify and run a mechanism that
+is $ε$-close in Bayes-Nash equilibrium revenue or welfare to that of the optimal truthful
+mechanism with high probability.",
+53,A/B Testing of Auctions,0,"For many application areas A/B testing, which partitions users of a system into an A (control)
+and B (treatment) group to experiment between several application designs, enables Internet
+companies to optimize their services to the behavioral patterns of their users. Unfortunately,
+the A/B testing framework cannot be applied in a straightforward manner to applications like
+auctions where the users (a.k.a., bidders) submit bids before the partitioning into the A and B
+groups is made. This paper combines auction theoretic modeling with the A/B testing framework to
+develop methodology for A/B testing auctions. The accuracy of our method %, assuming the auction
+is directly comparable to ideal A/B testing where there is no interference between A and B. Our
+results are based on an extension and improved analysis of the inference method of Chawla et al.
+(2014).",Theoretical economics
+54,Optimal Auctions vs. Anonymous Pricing,0,"For selling a single item to agents with independent but non-identically distributed values, the
+revenue optimal auction is complex. With respect to it, Hartline and Roughgarden (2009) showed
+that the approximation factor of the second-price auction with an anonymous reserve is between
+two and four. We consider the more demanding problem of approximating the revenue of the ex ante
+relaxation of the auction problem by posting an anonymous price (while supplies last) and prove
+that their worst-case ratio is e. As a corollary, the upper-bound of anonymous pricing or
+anonymous reserves versus the optimal auction improves from four to $e$. We conclude that, up to
+an $e$ factor, discrimination and simultaneity are unimportant for driving revenue in
+single-item auctions.",Data structures and algorithms
+55,No-Regret Learning in Bayesian Games,0,"Recent price-of-anarchy analyses of games of complete information suggest that coarse correlated
+equilibria, which characterize outcomes resulting from no-regret learning dynamics, have
+near-optimal welfare. This work provides two main technical results that lift this conclusion to
+games of incomplete information, a.k.a., Bayesian games. First, near-optimal welfare in Bayesian
+games follows directly from the smoothness-based proof of near-optimal welfare in the same game
+when the private information is public. Second, no-regret learning dynamics converge to Bayesian
+coarse correlated equilibrium in these incomplete information games. These results are enabled
+by interpretation of a Bayesian game as a stochastic game of complete information.",Machine learning
+56,Bayesian Budget Feasibility with Posted Pricing,0,"We consider the problem of budget feasible mechanism design proposed by Singer (2010), but in a
+Bayesian setting. A principal has a public value for hiring a subset of the agents and a budget,
+while the agents have private costs for being hired. We consider both additive and submodular
+value functions of the principal. We show that there are simple, practical, ex post budget
+balanced posted pricing mechanisms that approximate the value obtained by the Bayesian optimal
+mechanism that is budget balanced only in expectation. A main motivating application for this
+work is the crowdsourcing large projects, e.g., on Mechanical Turk, where workers are drawn from
+a large population and posted pricing is standard. Our analysis methods relate to contention
+resolution schemes in submodular optimization of Vondrak et al. (2011) and the correlation gap
+analysis of Yan (2011).",
+57,Optimal Platform Design,0,"An auction house cannot generally provide the optimal auction technology to every client.
+Instead it provides one or several auction technologies, and clients select the most appropriate
+one. For example, eBay provides ascending auctions and ""buy-it-now"" pricing. For each client the
+offered technology may not be optimal, but it would be too costly for clients to create their
+own. We call these mechanisms, which emphasize generality rather than optimality, platform
+mechanisms. A platform mechanism will be adopted by a client if its performance exceeds that of
+the client's outside option, e.g., hiring (at a cost) a consultant to design the optimal
+mechanism. We ask two related questions. First, for what costs of the outside option will the
+platform be universally adopted? Second, what is the structure of good platform mechanisms? We
+answer these questions using a novel prior-free analysis framework in which we seek mechanisms
+that are approximately optimal for every prior.",Data structures and algorithms
+58,Optimal Auctions for Correlated Buyers with Sampling,0,"Crémer and McLean [1985] showed that, when buyers' valuations are drawn from a correlated
+distribution, an auction with full knowledge on the distribution can extract the full social
+surplus. We study whether this phenomenon persists when the auctioneer has only incomplete
+knowledge of the distribution, represented by a finite family of candidate distributions, and
+has sample access to the real distribution. We show that the naive approach which uses samples
+to distinguish candidate distributions may fail, whereas an extended version of the
+Crémer-McLean auction simultaneously extracts full social surplus under each candidate
+distribution. With an algebraic argument, we give a tight bound on the number of samples needed
+by this auction, which is the difference between the number of candidate distributions and the
+dimension of the linear space they span.",
+59,Mechanism Design for Data Science,0,"Good economic mechanisms depend on the preferences of participants in the mechanism. For
+example, the revenue-optimal auction for selling an item is parameterized by a reserve price,
+and the appropriate reserve price depends on how much the bidders are willing to pay. A
+mechanism designer can potentially learn about the participants' preferences by observing
+historical data from the mechanism; the designer could then update the mechanism in response to
+learned preferences to improve its performance. The challenge of such an approach is that the
+data corresponds to the actions of the participants and not their preferences. Preferences can
+potentially be inferred from actions but the degree of inference possible depends on the
+mechanism. In the optimal auction example, it is impossible to learn anything about preferences
+of bidders who are not willing to pay the reserve price. These bidders will not cast bids in the
+auction and, from historical bid data, the auctioneer could never learn that lowering the
+reserve price would give a higher revenue (even if it would). To address this impossibility, the
+auctioneer could sacrifice revenue optimality in the initial auction to obtain better inference
+properties so that the auction's parameters can be adapted to changing preferences in the
+future. This paper develops the theory for optimal mechanism design subject to good
+inferability.",
+60,Price of Anarchy for Auction Revenue,0,"This paper develops tools for welfare and revenue analyses of Bayes-Nash equilibria in
+asymmetric auctions with single-dimensional agents. We employ these tools to derive price of
+anarchy results for social welfare and revenue. Our approach separates the standard smoothness
+framework into two distinct parts, isolating the analysis common to any auction from the
+analysis specific to a given auction. The first part relates a bidder's contribution to welfare
+in equilibrium to their contribution to welfare in the optimal auction using the price the
+bidder faces for additional allocation. Intuitively, either an agent's utility and hence
+contribution to welfare is high, or the price she has to pay for additional allocation is high
+relative to her value. We call this condition value covering; it holds in every Bayes-Nash
+equilibrium of any auction. The second part, revenue covering, relates the prices bidders face
+for additional allocation to the revenue of the auction, using an auction's rules and
+feasibility constraints. Combining the two parts gives approximation results to the optimal
+welfare, and, under the right conditions, the optimal revenue. In mechanisms with reserve
+prices, our welfare results show approximation with respect to the optimal mechanism with the
+same reserves. As a center-piece result, we analyze the single-item first-price auction with
+individual monopoly reserves. When each distribution satisfies a regularity condition the
+auction's revenue is at least a $2e/(e-1) \approx 3.16$ approximation to the revenue of the
+optimal auction. We also give bounds for matroid auctions with first-price or all-pay semantics,
+and the generalized first-price position auction. Finally, we give an extension theorem for
+simultaneous composition, i.e., when multiple auctions are run simultaneously, with
+single-valued, unit-demand agents.",
+61,Multi-dimensional Virtual Values and Second-degree Price Discrimination,0,"We consider a multi-dimensional screening problem of selling a product with multiple quality
+levels and design virtual value functions to derive conditions that imply optimality of only
+selling highest quality. A challenge of designing virtual values for multi-dimensional agents is
+that a mechanism that pointwise optimizes virtual values resulting from a general application of
+integration by parts is not incentive compatible, and no general methodology is known for
+selecting the right paths for integration by parts. We resolve this issue by first uniquely
+solving for paths that satisfy certain necessary conditions that the pointwise optimality of the
+mechanism imposes on virtual values, and then identifying distributions that ensure the
+resulting virtual surplus is indeed pointwise optimized by the mechanism. Our method of solving
+for virtual values is general, and as a second application we use it to derive conditions of
+optimality for selling only the grand bundle of items to an agent with additive preferences.",
+62,Prior-Independent Mechanisms for Scheduling,0,"We study the makespan minimization problem with unrelated selfish machines under the assumption
+that job sizes are stochastic. We design simple truthful mechanisms that under various
+distributional assumptions provide constant and sublogarithmic approximations to expected
+makespan. Our mechanisms are prior-independent in that they do not rely on knowledge of the job
+size distributions. Prior-independent approximation mechanisms have been previously studied for
+the objective of revenue maximization [Dhangwatnotai, Roughgarden and Yan'10, Devanur, Hartline,
+Karlin and Nguyen'11, Roughgarden, Talgam-Cohen and Yan'12]. In contrast to our results, in
+prior-free settings no truthful anonymous deterministic mechanism for the makespan objective can
+provide a sublinear approximation [Ashlagi, Dobzinski and Lavi'09].",Data structures and algorithms
+63,Prior-independent Auctions for Risk-averse Agents,0,"We study simple and approximately optimal auctions for agents with a particular form of
+risk-averse preferences. We show that, for symmetric agents, the optimal revenue (given a prior
+distribution over the agent preferences) can be approximated by the first-price auction (which
+is prior independent), and, for asymmetric agents, the optimal revenue can be approximated by an
+auction with simple form. These results are based on two technical methods. The first is for
+upper-bounding the revenue from a risk-averse agent. The second gives a payment identity for
+mechanisms with pay-your-bid semantics.",
+64,Prior-free Auctions for Budgeted Agents,0,"We consider prior-free auctions for revenue and welfare maximization when agents have a common
+budget. The abstract environments we consider are ones where there is a downward-closed and
+symmetric feasibility constraint on the probabilities of service of the agents. These
+environments include position auctions where slots with decreasing click-through rates are
+auctioned to advertisers. We generalize and characterize the envy-free benchmark from Hartline
+and Yan (2011) to settings with budgets and characterize the optimal envy-free outcomes for both
+welfare and revenue. We give prior-free mechanisms that approximate these benchmarks. A building
+block in our mechanism is a clinching auction for position auction environments. This auction is
+a generalization of the multi-unit clinching auction of Dobzinski et al. (2008) and a special
+case of the polyhedral clinching auction of Goel et al. (2012). For welfare maximization, we
+show that this clinching auction is a good approximation to the envy-free optimal welfare for
+position auction environments. For profit maximization, we generalize the random sampling profit
+extraction auction from Fiat et al. (2002) for digital goods to give a 10.0-approximation to the
+envy-free optimal revenue in symmetric, downward-closed environments. The profit maximization
+question is of interest even without budgets and our mechanism is a 7.5-approximation which
+improving on the 30.4 bound of Ha and Hartline (2012).",
+65,Envy Freedom and Prior-free Mechanism Design,0,"We consider the provision of an abstract service to single-dimensional agents. Our model
+includes position auctions, single-minded combinatorial auctions, and constrained matching
+markets. When the agents' values are drawn from a distribution, the Bayesian optimal mechanism
+is given by Myerson (1981) as a virtual-surplus optimizer. We develop a framework for prior-free
+mechanism design and analysis. A good mechanism in our framework approximates the optimal
+mechanism for the distribution if there is a distribution; moreover, when there is no
+distribution this mechanism still performs well. We define and characterize optimal envy-free
+outcomes in symmetric single-dimensional environments. Our characterization mirrors Myerson's
+theory. Furthermore, unlike in mechanism design where there is no point-wise optimal mechanism,
+there is always a point-wise optimal envy-free outcome. Envy-free outcomes and
+incentive-compatible mechanisms are similar in structure and performance. We therefore use the
+optimal envy-free revenue as a benchmark for measuring the performance of a prior-free
+mechanism. A good mechanism is one that approximates the envy free benchmark on any profile of
+agent values. We show that good mechanisms exist, and in particular, a natural generalization of
+the random sampling auction of Goldberg et al. (2001) is a constant approximation.",
+66,The Biased Sampling Profit Extraction Auction,0,"We give an auction for downward-closed environments that generalizes the random sampling profit
+extraction auction for digital goods of Fiat et al. (2002). The mechanism divides the agents in
+to a market and a sample using a biased coin and attempts to extract the optimal revenue from
+the sample from the market. The latter step is done with the downward-closed profit extractor of
+Ha and Hartline (2012). The auction is a 11-approximation to the envyfree benchmark in
+downward-closed permutation environments. This is an improvement on the previously best known
+results of 12.5 for matroid and 30.4 for downward-closed permutation environments that are due
+to Devanur et al. (2012) and Ha and Hartline (2012), respectively.",
+67,The Simple Economics of Approximately Optimal Auctions,0,"The intuition that profit is optimized by maximizing marginal revenue is a guiding principle in
+microeconomics. In the classical auction theory for agents with linear utility and
+single-dimensional preferences, Bulow and Roberts (1989) show that the optimal auction of
+Myerson (1981) is in fact optimizing marginal revenue. In particular Myerson's virtual values
+are exactly the derivative of an appropriate revenue curve. This paper considers mechanism
+design in environments where the agents have multi-dimensional and non-linear preferences.
+Understanding good auctions for these environments is considered to be the main challenge in
+Bayesian optimal mechanism design. In these environments maximizing marginal revenue may not be
+optimal and there is sometimes no direct way to implement the marginal revenue maximization. Our
+contributions are three fold: we characterize the settings for which marginal revenue
+maximization is optimal (by identifying an important condition that we call revenue linearity),
+we give simple procedures for implementing marginal revenue maximization in general, and we show
+that marginal revenue maximization is approximately optimal. Our approximation factor smoothly
+degrades in a term that quantifies how far the environment is from ideal (where marginal revenue
+maximization is optimal). Because the marginal revenue mechanism is optimal for
+single-dimensional agents, our generalization immediately approximately extends many results for
+single-dimensional agents. One of the biggest open questions in Bayesian algorithmic mechanism
+design is developing methodologies that are not brute-force in the size of the agent type space.
+Our methods identify a subproblem that, e.g., for unit-demand agents with values drawn from
+product distributions, enables approximation mechanisms that are polynomial in the dimension.",
+68,Bayesian Optimal Auctions via Multi- to Single-agent Reduction,0,"We study an abstract optimal auction problem for a single good or service. This problem includes
+environments where agents have budgets, risk preferences, or multi-dimensional preferences over
+several possible configurations of the good (furthermore, it allows an agent's budget and risk
+preference to be known only privately to the agent). These are the main challenge areas for
+auction theory. A single-agent problem is to optimize a given objective subject to a constraint
+on the maximum probability with which each type is allocated, a.k.a., an allocation rule. Our
+approach is a reduction from multi-agent mechanism design problem to collection of single-agent
+problems. We focus on maximizing revenue, but our results can be applied to other objectives
+(e.g., welfare). An optimal multi-agent mechanism can be computed by a linear/convex program on
+interim allocation rules by simultaneously optimizing several single-agent mechanisms subject to
+joint feasibility of the allocation rules. For single-unit auctions, Border \citeyearpar{B91}
+showed that the space of all jointly feasible interim allocation rules for $n$ agents is a
+$\NumTypes$-dimensional convex polytope which can be specified by $2^\NumTypes$ linear
+constraints, where $\NumTypes$ is the total number of all agents' types. Consequently,
+efficiently solving the mechanism design problem requires a separation oracle for the
+feasibility conditions and also an algorithm for ex-post implementation of the interim
+allocation rules. We show that the polytope of jointly feasible interim allocation rules is the
+projection of a higher dimensional polytope which can be specified by only $O(\NumTypes^2)$
+linear constraints. Furthermore, our proof shows that finding a preimage of the interim
+allocation rules in the higher dimensional polytope immediately gives an ex-post implementation.",
+69,Optimal Crowdsourcing Contests,0,"We study the design and approximation of optimal crowdsourcing contests. Crowdsourcing contests
+can be modeled as all-pay auctions because entrants must exert effort up-front to enter. Unlike
+all-pay auctions where a usual design objective would be to maximize revenue, in crowdsourcing
+contests, the principal only benefits from the submission with the highest quality. We give a
+theory for optimal crowdsourcing contests that mirrors the theory of optimal auction design: the
+optimal crowdsourcing contest is a virtual valuation optimizer (the virtual valuation function
+depends on the distribution of contestant skills and the number of contestants). We also compare
+crowdsourcing contests with more conventional means of procurement. In this comparison,
+crowdsourcing contests are relatively disadvantaged because the effort of losing contestants is
+wasted. Nonetheless, we show that crowdsourcing contests are 2-approximations to conventional
+methods for a large family of ""regular"" distributions, and 4-approximations, otherwise.",
+70,"Mechanism Design via Consensus Estimates, Cross Checking, and Profit Extraction",0,"There is only one technique for prior-free optimal mechanism design that generalizes beyond the
+structurally benevolent setting of digital goods. This technique uses random sampling to
+estimate the distribution of agent values and then employs the Bayesian optimal mechanism for
+this estimated distribution on the remaining players. Though quite general, even for digital
+goods, this random sampling auction has a complicated analysis and is known to be suboptimal. To
+overcome these issues we generalize the consensus technique from Goldberg and Hartline (2003) to
+structurally rich environments that include, e.g., single-minded combinatorial auctions.",
+71,Bayesian Algorithmic Mechanism Design,0,"The principal problem in algorithmic mechanism design is in merging the incentive constraints
+imposed by selfish behavior with the algorithmic constraints imposed by computational
+intractability. This field is motivated by the observation that the preeminent approach for
+designing incentive compatible mechanisms, namely that of Vickrey, Clarke, and Groves; and the
+central approach for circumventing computational obstacles, that of approximation algorithms,
+are fundamentally incompatible: natural applications of the VCG approach to an approximation
+algorithm fails to yield an incentive compatible mechanism. We consider relaxing the desideratum
+of (ex post) incentive compatibility (IC) to Bayesian incentive compatibility (BIC), where
+truthtelling is a Bayes-Nash equilibrium (the standard notion of incentive compatibility in
+economics). For welfare maximization in single-parameter agent settings, we give a general
+black-box reduction that turns any approximation algorithm into a Bayesian incentive compatible
+mechanism with essentially the same approximation factor.",
+72,Sequential Posted Pricing and Multi-parameter Mechanism Design,0,"We consider the classical mathematical economics problem of {\em Bayesian optimal mechanism
+design} where a principal aims to optimize expected revenue when allocating resources to
+self-interested agents with preferences drawn from a known distribution. In single-parameter
+settings (i.e., where each agent's preference is given by a single private value for being
+served and zero for not being served) this problem is solved [Myerson '81]. Unfortunately, these
+single parameter optimal mechanisms are impractical and rarely employed [Ausubel and Milgrom
+'06], and furthermore the underlying economic theory fails to generalize to the important,
+relevant, and unsolved multi-dimensional setting (i.e., where each agent's preference is given
+by multiple values for each of the multiple services available) [Manelli and Vincent '07]. In
+contrast to the theory of optimal mechanisms we develop a theory of sequential posted price
+mechanisms, where agents in sequence are offered take-it-or-leave-it prices. These mechanisms
+are approximately optimal in single-dimensional settings, and avoid many of the properties that
+make optimal mechanisms impractical. Furthermore, these mechanisms generalize naturally to give
+the first known approximations to the elusive optimal multi-dimensional mechanism design
+problem. In particular, we solve multi-dimensional multi-unit auction problems and
+generalizations to matroid feasibility constraints. The constant approximations we obtain range
+from 1.5 to 8. For all but one case, our posted price sequences can be computed in polynomial
+time.",
+73,Algorithmic Pricing via Virtual Valuations,0,"Algorithmic pricing is the computational problem that sellers (e.g., in supermarkets) face when
+trying to set prices for their items to maximize their profit in the presence of a known demand.
+Guruswami et al. (2005) propose this problem and give logarithmic approximations (in the number
+of consumers) when each consumer's values for bundles are known precisely. Subsequently several
+versions of the problem have been shown to have poly-logarithmic inapproximability. This problem
+has direct ties to the important open question of better understanding the Bayesian optimal
+mechanism in multi-parameter settings; however, logarithmic approximations are inadequate for
+this purpose. It is therefore of vital interest to consider special cases where constant
+approximations are possible. We consider the unit-demand variant of this problem. Here a
+consumer has a valuation for each different item and their value for a set of items is simply
+the maximum value they have for any item in the set. We assume that the preferences of the
+consumers are drawn from a distribution, the standard assumption in economics; furthermore, the
+setting of a specific set of customers with known preferences, which is employed in all prior
+work in algorithmic pricing, is a special case of this general problem, where there is a
+discrete Bayesian distribution for preferences specified by picking one consumer uniformly from
+the given set of consumers. Our work complements these existing works by considering the case
+where the consumer's valuations for the different items are independent random variables. Our
+main result is a constant approximation that makes use of an interesting connection between this
+problem and the concept of virtual valuations from the single-parameter Bayesian optimal
+mechanism design literature.",Data structures and algorithms
+74,Optimal Mechansim Design and Money Burning,0,"Mechanism design is now a standard tool in computer science for aligning the incentives of
+self-interested agents with the objectives of a system designer. There is, however, a
+fundamental disconnect between the traditional application domains of mechanism design (such as
+auctions) and those arising in computer science (such as networks): while monetary transfers
+(i.e., payments) are essential for most of the known positive results in mechanism design, they
+are undesirable or even technologically infeasible in many computer systems. Classical
+impossibility results imply that the reach of mechanisms without transfers is severely limited.
+Computer systems typically do have the ability to reduce service quality--routing systems can
+drop or delay traffic, scheduling protocols can delay the release of jobs, and computational
+payment schemes can require computational payments from users (e.g., in spam-fighting systems).
+Service degradation is tantamount to requiring that users burn money}, and such ``payments'' can
+be used to influence the preferences of the agents at a cost of degrading the social surplus. We
+develop a framework for the design and analysis of money-burning mechanisms to maximize the
+residual surplus--the total value of the chosen outcome minus the payments required.",Data structures and algorithms
