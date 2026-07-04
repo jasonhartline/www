@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAL Paper Bidder</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>CAL Paper Bidder</h1>
+          <p>
+            Continuous Active Learning for HotCRP-style review preferences. Browser-only: files stay on this computer and are not uploaded.
+            <a href="https://github.com/jasonhartline/cal-paper-bidder" target="_blank" rel="noreferrer">GitHub project</a>.
+          </p>
+        </div>
+        <div class="actions">
+          <label class="button primary">
+            Load CSV
+            <input id="csv-file" type="file" accept=".csv,text/csv" />
+          </label>
+          <button id="load-example" type="button">Load Demo</button>
+          <button id="export-csv" type="button" disabled>Export CSV</button>
+        </div>
+      </header>
+
+      <section class="settings-panel" aria-label="Project settings">
+        <div class="setting">
+          <label for="pref-min">Minimum</label>
+          <input id="pref-min" type="number" value="-20" />
+        </div>
+        <div class="setting">
+          <label for="pref-neutral">No ranking</label>
+          <input id="pref-neutral" type="number" value="0" />
+        </div>
+        <div class="setting">
+          <label for="pref-max">Maximum</label>
+          <input id="pref-max" type="number" value="20" />
+        </div>
+        <div class="setting grow model-weight-setting">
+          <label id="model-weight-label" for="model-weight">Text model weight</label>
+          <input id="model-weight" type="range" min="0" max="100" step="1" value="0" disabled />
+          <div class="model-weight-meta">
+            <span id="model-weight-value">0% text / 100% topics</span>
+            <button id="model-weight-reset" type="button" disabled>Use recommended</button>
+          </div>
+        </div>
+        <button id="rerank" type="button" disabled>Re-rank</button>
+      </section>
+
+      <section id="empty-state" class="empty-state">
+        <h2>Start with a review-preferences CSV</h2>
+        <p>The file should have columns: <code>paper,title,preference,abstract,topics</code>.</p>
+        <p>In HotCRP, download it from the link at the bottom of the review preferences page.</p>
+      </section>
+
+      <section id="workspace" class="workspace hidden">
+        <aside class="topics-panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Topics</h2>
+              <span id="topic-count">0</span>
+            </div>
+            <div class="panel-actions">
+              <label class="button small-button">
+                Load topic scores
+                <input id="topic-file" type="file" accept=".json,application/json" />
+              </label>
+              <button id="save-topics" type="button" disabled>Save topic scores</button>
+            </div>
+          </div>
+          <div id="topics"></div>
+        </aside>
+
+        <section class="papers-panel">
+          <div class="panel-heading papers-heading">
+            <div>
+              <h2>Papers</h2>
+              <span id="paper-count">0 papers</span>
+            </div>
+            <div class="filters">
+              <label>
+                <input id="hide-rated" type="checkbox" />
+                Hide ranked
+              </label>
+            </div>
+          </div>
+          <div id="rank-summary" class="rank-summary"></div>
+          <div id="papers" class="paper-list"></div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
